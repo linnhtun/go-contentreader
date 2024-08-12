@@ -1,3 +1,3 @@
-module github.com/linnhtun/go-content_reader
+module github.com/linnhtun/go-contentreader
 
 go 1.22.2

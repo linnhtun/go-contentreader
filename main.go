@@ -1,4 +1,4 @@
-package content_reader
+package contentreader
 
 import (
 	"errors"
