@@ -11,11 +11,13 @@ func ReadText(fileName string, document []byte) (content string, err error) {
 	switch ext {
 	case ".docx":
 		content, err = readDocx(document)
+		return
 	case ".pdf":
 		content, err = readPdf(document)
+		return
 	}
 
-	return "", errors.New("Unsupported file type")
+	return "", errors.New("unsupported file type")
 }
 
 func getFileExtension(fileName string) string {
